@@ -8,11 +8,6 @@ https://veliqen.tech
 ### Video presentation
 [Watch VELIQEN OS presentation](demo.mp4)
 
-### Project status
-Under development.
-
-Source code and releases will be published later.
-
 © VELIQEN OS
 
 <!-- VELIQEN_RELEASE_BEGIN -->
