@@ -1,43 +1,108 @@
+<div align="center">
+
 # VELIQEN OS
+### Android 17 · release-17-10 · by Aizner
 
-A new Android operating system experience.
+**A distinctive Android experience, shaped around a calmer home screen and a coherent visual style.**
 
-### Official website
-https://veliqen.tech
+[Download latest release](https://github.com/eyzner/VELIQEN-OS/releases/latest) · [Screenshots](#screenshots) · [Русский](#русский)
 
-### Video presentation
-[Watch VELIQEN OS presentation](demo.mp4)
+</div>
 
-© VELIQEN OS
+---
 
-<!-- VELIQEN_RELEASE_BEGIN -->
+## English
 
-## VELIQEN OS 17 — microG Edition
+VELIQEN OS is a custom Android 17 system with a redesigned launcher, system settings, quick controls and a collection of apps styled to work together.
 
-**Android 17 · LineageOS-based GSI · ARM64 · ext4 · Beta**
+### What’s inside
 
-VELIQEN OS is a custom Android GSI focused on a minimal interface, mountain-inspired visuals and redesigned system experiences. This build is the **microG edition** (not a Google Play / certified GApps build).
+| Home and personalization | System tools | Everyday apps |
+|:--|:--|:--|
+| Home pages with app icons, folders and widgets | Redesigned Settings and About device | Weather with hourly and 7-day forecasts |
+| Translucent dock and circular icon style | Quick Settings with large connectivity controls | Calendar, Notes and Calculator |
+| Pink Dream, VELIQEN Blue GT, Violet Aurora and Emerald Lake themes | Private space and Kids mode entries | Refreshed Messaging appearance |
+| Calendar and productivity widgets | Optional AizSecret reset controls | RAM expansion through configurable zRAM |
 
-### Preview
+RAM expansion offers additional compressed-memory capacity; it does not add physical RAM. AizSecret can erase local user data when its explicitly enabled reset conditions are met. Read each setting carefully before enabling it.
 
-<p align="center">
-  <img src="screenshots/launcher.png" alt="VELIQEN OS home screen" width="190" />
-  <img src="screenshots/settings.png" alt="VELIQEN OS settings" width="190" />
-  <img src="screenshots/about-device.png" alt="VELIQEN OS device information" width="190" />
-  <img src="screenshots/security.png" alt="VELIQEN OS privacy and security settings" width="190" />
-</p>
+### Screenshots
 
-### Release
+| Home screen | Themes |
+|:--:|:--:|
+| <img src="screenshots/home-screen.png" width="250" alt="VELIQEN OS home screen"> | <img src="screenshots/themes.png" width="250" alt="VELIQEN OS themes"> |
 
-- **Version:** `17-01.1BETA-aizner`
-- **Download:** [VELIQEN OS 17 microG Beta](https://github.com/eyzner/VELIQEN-OS/releases/tag/v17-01.1BETA-aizner)
-- **Format:** `system.img` (ARM64 GSI, ext4), distributed as compressed multipart archives
-- **Screenshots:** captured on Cubot A50
+| Quick Settings | Settings |
+|:--:|:--:|
+| <img src="screenshots/quick-settings.png" width="250" alt="Quick Settings"> | <img src="screenshots/settings.png" width="250" alt="Settings and privacy controls"> |
 
-> **Beta software.** This is a system image, not a complete device firmware package. Flashing requires a compatible Treble device and an unlocked bootloader. Back up personal data and original partitions first. Compatibility, calling, camera, encryption and other hardware features may vary by device. No Google Play certification is claimed.
+| Weather | Calendar |
+|:--:|:--:|
+| <img src="screenshots/weather.png" width="250" alt="Weather app"> | <img src="screenshots/calendar.png" width="250" alt="Calendar app"> |
 
-### Важно
+| Calculator | Notes |
+|:--:|:--:|
+| <img src="screenshots/calculator.png" width="250" alt="Calculator app"> | <img src="screenshots/notes.png" width="250" alt="Notes app"> |
 
-Это тестовая ARM64 GSI-прошивка на Android 17 с microG. Перед установкой сохраните резервные копии и убедитесь, что устройство совместимо с данным типом GSI. Скриншоты сделаны на Cubot A50.
+| About device | RAM expansion |
+|:--:|:--:|
+| <img src="screenshots/about-device.png" width="250" alt="About device"> | <img src="screenshots/ram-expansion.png" width="250" alt="RAM expansion settings"> |
 
-<!-- VELIQEN_RELEASE_END -->
+| AizSecret |
+|:--:|
+| <img src="screenshots/aizsecret.png" width="250" alt="AizSecret settings"> |
+
+### Download
+
+Open [Releases](https://github.com/eyzner/VELIQEN-OS/releases) and download the latest system image and its `SHA256SUMS` file. Verify the download before use:
+
+```bash
+sha256sum -c SHA256SUMS
+```
+
+The release image is compressed as `.img.xz`. Extract it with:
+
+```bash
+unxz -k VELIQEN-OS-release-17-10-arm64-system.img.xz
+```
+
+Screenshots show VELIQEN OS release-17-10 running on a Cubot A50.
+
+## Русский
+
+VELIQEN OS — кастомная система на базе Android 17 с переработанным рабочим столом, настройками, шторкой быстрых действий и приложениями в едином стиле.
+
+### Что входит
+
+| Рабочий стол и оформление | Системные функции | Приложения |
+|:--|:--|:--|
+| Страницы рабочего стола со значками, папками и виджетами | Переработанные настройки и экран «Об устройстве» | Погода с почасовым и семидневным прогнозом |
+| Полупрозрачная нижняя панель и круглые значки | Новая раскладка быстрых переключателей | Календарь, заметки и калькулятор |
+| Темы Pink Dream, VELIQEN Blue GT, Violet Aurora и Emerald Lake | Разделы приватного пространства и детского режима | Обновлённое оформление сообщений |
+| Виджеты календаря и продуктивности | Настраиваемое стирание данных через AizSecret | Расширение ОЗУ с помощью zRAM |
+
+Расширение ОЗУ использует сжатую память и не добавляет физическую ОЗУ. При включении AizSecret заданные условия сброса приводят к удалению локальных пользовательских данных. Внимательно прочитай описание перед включением.
+
+### Скриншоты
+
+Скриншоты выше показывают рабочий стол, темы, шторку, настройки, погоду, календарь, калькулятор, заметки, сведения об устройстве, расширение ОЗУ и AizSecret.
+
+### Загрузка
+
+Открой раздел [Releases](https://github.com/eyzner/VELIQEN-OS/releases) и скачай свежий образ системы и файл `SHA256SUMS`. Проверь файл после загрузки:
+
+```bash
+sha256sum -c SHA256SUMS
+```
+
+Образ опубликован в формате `.img.xz`. Распаковать его можно командой:
+
+```bash
+unxz -k VELIQEN-OS-release-17-10-arm64-system.img.xz
+```
+
+Скриншоты сделаны на Cubot A50 с VELIQEN OS release-17-10.
+
+---
+
+<div align="center">VELIQEN OS · Aizner</div>
