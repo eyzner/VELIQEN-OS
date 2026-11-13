@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "version": "release-17-10",
+  "tag": "release-17-10",
+  "edition": "microg",
+  "arch": "arm64",
+  "android": 17,
+  "channel": "stable",
+  "install_mode": "fastbootd-manual",
+  "notes": "# VELIQEN OS — release-17-10\n\n## English\n\nVELIQEN OS is an Android 17 custom system with a redesigned home screen, themes, Quick Settings and Settings, plus a set of coordinated everyday apps.\n\nHighlights: Pink Dream, VELIQEN Blue GT, Violet Aurora and Emerald Lake themes; Weather, Calendar, Notes and Calculator; private-space and Kids mode entries; AizSecret reset controls; and configurable zRAM expansion. zRAM uses compressed memory and does not add physical RAM. AizSecret reset conditions erase local user data.\n\nDownload the system image and its SHA-256 checksum below. Verify the image with `sha256sum -c <checksum-file>` before extracting or using it.\n\n## Русский\n\nVELIQEN OS — кастомная система на базе Android 17 с обновлённым рабочим столом, темами, шторкой быстрых настроек, оформлением настроек и приложениями в едином стиле.\n\nВ системе есть темы Pink Dream, VELIQEN Blue GT, Violet Aurora и Emerald Lake; приложения «Погода», «Календарь», «Заметки» и «Калькулятор»; разделы приватного пространства и детского режима; настройки AizSecret и расширение zRAM. zRAM использует сжатую память и не увеличивает физическую ОЗУ. Сброс AizSecret удаляет локальные данные пользователя.\n\nСкачай образ системы и файл с контрольной суммой SHA-256 ниже. Перед распаковкой или использованием проверь образ командой `sha256sum -c <файл-с-контрольной-суммой>`.",
+  "files": [
+    {
+      "name": "VELIQEN-OS-release-17-10-arm64-system.img.xz",
+      "url": "https://github.com/eyzner/VELIQEN-OS/releases/download/release-17-10/VELIQEN-OS-release-17-10-arm64-system.img.xz",
+      "sha256": "e722de61eefc7a8ce1f01d6965c0a1ff4ae4f55983953638bd534dd2f09e9226",
+      "size": 1117291124
+    }
+  ]
+}
