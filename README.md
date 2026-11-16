@@ -1,108 +1,50 @@
-<div align="center">
-
 # VELIQEN OS
-### Android 17 · release-17-10 · by Aizner
 
-**A distinctive Android experience, shaped around a calmer home screen and a coherent visual style.**
+VELIQEN OS is an Android 17-based system for ARM64 devices. It puts apps, folders and widgets directly on the home screen and gives Settings, Quick Settings and the built-in apps a shared look.
 
-[Download latest release](https://github.com/eyzner/VELIQEN-OS/releases/latest) · [Screenshots](#screenshots) · [Русский](#русский)
+**[Download VELIQEN OS 17-11](https://github.com/eyzner/VELIQEN-OS/releases/tag/release-17-11)** · [Screenshots](#screenshots)
 
-</div>
+## First setup
 
----
+The edition picker, where included, lets you choose **GApps** for Google apps and services, **microG** for microG services, or **Vanilla** for a setup without either. Make your choice during the initial setup.
 
-## English
+## AizSecret
 
-VELIQEN OS is a custom Android 17 system with a redesigned launcher, system settings, quick controls and a collection of apps styled to work together.
+AizSecret lets you set an optional emergency password. Entering that password on the lock screen triggers a full factory reset. You can also enable a separate option to reset after five incorrect unlock attempts.
 
-### What’s inside
+**A reset permanently erases local user data and installed apps.**
 
-| Home and personalization | System tools | Everyday apps |
-|:--|:--|:--|
-| Home pages with app icons, folders and widgets | Redesigned Settings and About device | Weather with hourly and 7-day forecasts |
-| Translucent dock and circular icon style | Quick Settings with large connectivity controls | Calendar, Notes and Calculator |
-| Pink Dream, VELIQEN Blue GT, Violet Aurora and Emerald Lake themes | Private space and Kids mode entries | Refreshed Messaging appearance |
-| Calendar and productivity widgets | Optional AizSecret reset controls | RAM expansion through configurable zRAM |
+## Around the system
 
-RAM expansion offers additional compressed-memory capacity; it does not add physical RAM. AizSecret can erase local user data when its explicitly enabled reset conditions are met. Read each setting carefully before enabling it.
+- Private space keeps its apps and data separate. Kids mode only opens apps approved by a parent.
+- The launcher has its own theme picker, a translucent dock and room for calendar, weather and productivity widgets.
+- Quick Settings groups Wi-Fi, mobile data and Bluetooth at the top.
+- Weather, Calendar, Notes and Calculator share the VELIQEN design.
+- RAM expansion adds configurable compressed memory through zRAM.
 
-### Screenshots
+## Downloads
 
-| Home screen | Themes |
-|:--:|:--:|
-| <img src="screenshots/home-screen.png" width="250" alt="VELIQEN OS home screen"> | <img src="screenshots/themes.png" width="250" alt="VELIQEN OS themes"> |
+Choose one ARM64 system image from [the release page](https://github.com/eyzner/VELIQEN-OS/releases/tag/release-17-11).
 
-| Quick Settings | Settings |
-|:--:|:--:|
-| <img src="screenshots/quick-settings.png" width="250" alt="Quick Settings"> | <img src="screenshots/settings.png" width="250" alt="Settings and privacy controls"> |
+| Archive | System partition |
+| --- | --- |
+| `VELIQEN-EXT4-ARM64.zip` | ext4 |
+| `VELIQEN-EROFS-ARM64.zip` | EROFS, for devices that support it |
 
-| Weather | Calendar |
-|:--:|:--:|
-| <img src="screenshots/weather.png" width="250" alt="Weather app"> | <img src="screenshots/calendar.png" width="250" alt="Calendar app"> |
+Extract the ZIP to get the image. To check a download on Linux, put `SHA256SUMS` next to the ZIP and run `sha256sum --ignore-missing -c SHA256SUMS`.
 
-| Calculator | Notes |
-|:--:|:--:|
-| <img src="screenshots/calculator.png" width="250" alt="Calculator app"> | <img src="screenshots/notes.png" width="250" alt="Notes app"> |
+## Screenshots
 
-| About device | RAM expansion |
-|:--:|:--:|
-| <img src="screenshots/about-device.png" width="250" alt="About device"> | <img src="screenshots/ram-expansion.png" width="250" alt="RAM expansion settings"> |
+| Home screen | Quick Settings | Themes |
+| :---: | :---: | :---: |
+| <img src="screenshots/home-screen.png" width="225" alt="VELIQEN OS home screen"> | <img src="screenshots/quick-settings.png" width="225" alt="Quick Settings"> | <img src="screenshots/themes.png" width="225" alt="Theme picker"> |
 
-| AizSecret |
-|:--:|
-| <img src="screenshots/aizsecret.png" width="250" alt="AizSecret settings"> |
+| Settings | AizSecret | RAM expansion |
+| :---: | :---: | :---: |
+| <img src="screenshots/settings.png" width="225" alt="Settings"> | <img src="screenshots/aizsecret.png" width="225" alt="AizSecret settings"> | <img src="screenshots/ram-expansion.png" width="225" alt="RAM expansion settings"> |
 
-### Download
+| Weather | Calendar | Notes |
+| :---: | :---: | :---: |
+| <img src="screenshots/weather.png" width="225" alt="Weather"> | <img src="screenshots/calendar.png" width="225" alt="Calendar"> | <img src="screenshots/notes.png" width="225" alt="Notes"> |
 
-Open [Releases](https://github.com/eyzner/VELIQEN-OS/releases) and download the latest system image and its `SHA256SUMS` file. Verify the download before use:
-
-```bash
-sha256sum -c SHA256SUMS
-```
-
-The release image is compressed as `.img.xz`. Extract it with:
-
-```bash
-unxz -k VELIQEN-OS-release-17-10-arm64-system.img.xz
-```
-
-Screenshots show VELIQEN OS release-17-10 running on a Cubot A50.
-
-## Русский
-
-VELIQEN OS — кастомная система на базе Android 17 с переработанным рабочим столом, настройками, шторкой быстрых действий и приложениями в едином стиле.
-
-### Что входит
-
-| Рабочий стол и оформление | Системные функции | Приложения |
-|:--|:--|:--|
-| Страницы рабочего стола со значками, папками и виджетами | Переработанные настройки и экран «Об устройстве» | Погода с почасовым и семидневным прогнозом |
-| Полупрозрачная нижняя панель и круглые значки | Новая раскладка быстрых переключателей | Календарь, заметки и калькулятор |
-| Темы Pink Dream, VELIQEN Blue GT, Violet Aurora и Emerald Lake | Разделы приватного пространства и детского режима | Обновлённое оформление сообщений |
-| Виджеты календаря и продуктивности | Настраиваемое стирание данных через AizSecret | Расширение ОЗУ с помощью zRAM |
-
-Расширение ОЗУ использует сжатую память и не добавляет физическую ОЗУ. При включении AizSecret заданные условия сброса приводят к удалению локальных пользовательских данных. Внимательно прочитай описание перед включением.
-
-### Скриншоты
-
-Скриншоты выше показывают рабочий стол, темы, шторку, настройки, погоду, календарь, калькулятор, заметки, сведения об устройстве, расширение ОЗУ и AizSecret.
-
-### Загрузка
-
-Открой раздел [Releases](https://github.com/eyzner/VELIQEN-OS/releases) и скачай свежий образ системы и файл `SHA256SUMS`. Проверь файл после загрузки:
-
-```bash
-sha256sum -c SHA256SUMS
-```
-
-Образ опубликован в формате `.img.xz`. Распаковать его можно командой:
-
-```bash
-unxz -k VELIQEN-OS-release-17-10-arm64-system.img.xz
-```
-
-Скриншоты сделаны на Cubot A50 с VELIQEN OS release-17-10.
-
----
-
-<div align="center">VELIQEN OS · Aizner</div>
+[More screenshots](screenshots/)
